@@ -1,0 +1,128 @@
+/* Write your CSS here */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+.banner-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  border-radius: 14px;
+  padding: 16px;
+  color: #475569;
+}
+.add-transaction-heading {
+  margin-bottom: 12px;
+}
+.money-manager-color {
+  color: #0b69ff;
+}
+.form-history-container {
+  display: flex;
+  justify-content: space-around;
+}
+.form-container {
+  border: 1px solid #cbd5e1;
+  padding: 14px;
+  margin: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.input-holder {
+  width: 200px;
+  padding: 3px;
+  outline: none;
+}
+.btn {
+  background-color: #0b69ff;
+  color: #fff;
+  border-radius: 7px;
+  width: 70px;
+  height: 30px;
+  padding: 4px 0;
+  margin-top: 12px;
+  border: none;
+  outline: none;
+}
+
+.history-container {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  width: 60%;
+}
+
+.history-ul-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cbd5e1;
+  padding: 6px;
+  border-radius: 8px;
+  margin-top: 14px;
+}
+
+.li-heading-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+
+.history-heading {
+  font-weight: bold;
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-container {
+    padding: 14px;
+    flex-wrap: wrap;
+  }
+  .banner-container {
+    margin-bottom: 12px;
+  }
+
+  .form-history-container {
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-container {
+    margin: 12px 0 12px 0;
+    width: 90%;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .input-holder {
+    width: 90%;
+  }
+
+  .btn {
+    width: 100px;
+    height: 35px;
+  }
+
+  .history-main-heading,
+  .add-transaction-heading {
+    text-align: center;
+    font-size: medium;
+  }
+
+  .history-container {
+    width: 90%;
+    margin-top: 16px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+}

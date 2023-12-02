@@ -1,0 +1,60 @@
+/* Write your CSS here */
+.moneyDetails-bg-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 12px 0;
+}
+.balance-container {
+  display: flex;
+  background-image: linear-gradient(to right, #ecfccb, #84cc16);
+  border: 1px solid #84cc16;
+  border-radius: 12px;
+  height: 110px;
+  width: 25%;
+  padding: 12px;
+  align-items: center;
+}
+.income-container {
+  display: flex;
+  background-image: linear-gradient(to right, #cffafe, #06b6d4);
+  border: 1px solid #06b6d4;
+  border-radius: 12px;
+  height: 110px;
+  width: 25%;
+  padding: 12px;
+  align-items: center;
+}
+.expenses-container {
+  display: flex;
+  background-image: linear-gradient(to right, #ede9fe, #7c3aed);
+  border: 1px solid #7c3aed;
+  border-radius: 12px;
+  height: 110px;
+  width: 25%;
+  padding: 12px;
+  align-items: center;
+}
+.img {
+  height: 40px;
+  margin-right: 4px;
+}
+.rs {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .moneyDetails-bg-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 8pxpx 0 8px 0;
+  }
+  .balance-container,
+  .income-container,
+  .expenses-container {
+    border-radius: 10px;
+    height: 80px;
+    width: 80%;
+    margin-bottom: 8px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+}
